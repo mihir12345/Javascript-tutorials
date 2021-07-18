@@ -1,0 +1,14 @@
+
+const people=[
+    {name:"mihir",age:22},
+    {name:"tinu", age:23},
+    {name:"tito", age:6}
+]
+
+const result=people.reduce((initial, actual)=>{
+ return initial+actual.age
+   
+},0)
+
+console.log(result)
+
