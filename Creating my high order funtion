@@ -1,0 +1,18 @@
+const arraryStr=['JavaScript', 'Python', 'PHP', 'Java', 'C'];
+
+function myFuntion(arr,fn){
+    const emptyArry=[];
+    for(i=0;i<arr.length;i++){
+        emptyArry.push(fn(arr[i]))
+    }
+
+    return emptyArry;
+}
+
+const output= myFuntion(arraryStr,(init)=>{
+return init.length;
+});
+
+
+
+console.log(output);
