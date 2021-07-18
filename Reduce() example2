@@ -1,0 +1,14 @@
+const people=[
+    {name:"mihir",age:22},
+    {name:"tinu", age:23},
+    {name:"tito", age:6}
+]
+
+const final=people.reduce((group,indi)=>{
+const age=indi.age
+if(group[age]==null)group[age]=[]
+group[age].push(indi)
+return group
+},{})
+
+console.log(final)
