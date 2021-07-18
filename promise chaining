@@ -1,0 +1,32 @@
+const myPromise = new Promise((resolve,reject)=>{
+const condition=true;
+    if(condition){
+        setTimeout(function(){
+        resolve(`resolve`)
+        },300)} 
+    else{
+        reject(`reject`)
+    }
+}) ;
+
+
+const secondPromise = function(){
+    return new Promise(function(resolve,reject){
+    resolve(`this is second resolve `)
+    });}
+
+const demoPromise=function(){
+myPromise
+.then(secondPromise)
+.then((successMsg) => {
+    console.log(successMsg);
+})
+.catch((errorMsg) => { 
+    console.log(errorMsg);
+})}
+
+demoPromise();
+
+
+
+
