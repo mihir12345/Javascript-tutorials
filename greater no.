@@ -1,0 +1,16 @@
+const number=50
+let n1=0
+let n2=1
+let nextNumber
+console.log(n1);//staring
+console.log(n2);
+nextNumber=n1+n2
+
+while(nextNumber<=number){
+    console.log(nextNumber);
+    n1=n2
+    n2=nextNumber
+    nextNumber=n1+n2
+
+}
+
