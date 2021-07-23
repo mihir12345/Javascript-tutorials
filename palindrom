@@ -1,0 +1,39 @@
+function checkPalindrom(string){
+const len=string.length
+for(let i=0; i<len/2; i++){
+if (string[i]!==string[len-1-i]){
+console.log(`this is palindrom`)}
+else{console.log(`this is not a palindrome`)}
+}
+}
+
+const str= `mihir`
+const str2=checkPalindrom(str)
+console.log(str2)
+
+
+////////////////////////////////////////////////////original code/////////////////////////////////////////////////////////////////////////////////
+
+function checkPalindrome(string) {
+
+    // find the length of a string
+    const len = string.length;
+
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+     }
+
+// take input
+const string = 'mada'
+
+// call the function
+const value = checkPalindrome(string);
+
+console.log(value);
