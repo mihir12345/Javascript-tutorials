@@ -1,0 +1,32 @@
+const  emp=[
+  {name:'bijesh',salaray:8000},
+  {name:'rajesh',salaray:5500},
+  {name:'bhadresh',salaray:6000},
+  {name:'vikash',salaray:7000},
+  ]
+  
+  
+  
+//   emp.sort(function(a, b) {
+//   var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+//   var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
+
+//   // names must be equal
+//   return 0;
+// });
+
+
+emp.sort(function(a,b){
+  return a.salaray-b.salaray
+})
+  
+  console.log(emp)
+  
+  
+  
